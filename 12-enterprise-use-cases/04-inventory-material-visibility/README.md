@@ -1,12 +1,9 @@
 # 04 — Inventory & Material Visibility
 
-## Interview Question
+## Problem Statement
 How would I build one trusted view of inventory across plants, warehouses, and in-transit locations when source systems update at different times?
 
-## Business Problem
-Inventory information can come from ERP, warehouse, planning, and other sources. A planner may see different numbers depending on the report.
-
-## Goal
+## Business Goal
 Create a common inventory view with clear definitions for on-hand, allocated, available, and in-transit inventory.
 
 ```text
