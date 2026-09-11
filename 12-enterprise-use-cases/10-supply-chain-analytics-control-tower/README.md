@@ -1,12 +1,9 @@
 # 10 — Supply Chain Analytics & Control Tower
 
-## Interview Question
+## Problem Statement
 How would I bring procurement, materials, inventory, manufacturing, orders, and transportation data together so business users have one view of supply-chain performance and risk?
 
-## Business Problem
-Each business area can have its own system and report. One team may know inventory is low while another knows a supplier is late or a shipment is delayed. The business needs these signals connected.
-
-## Goal
+## Business Goal
 Create a cross-domain analytical layer that helps users understand supply-chain performance and investigate problems back to source data.
 
 ## Source Domains
