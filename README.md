@@ -16,12 +16,12 @@ The goal of this repository is simple: show how I would use Snowflake to solve c
 - Data sharing
 - Enterprise data architecture
 - AI-ready data
-- Enterprise supply-chain architecture case studies
 - End-to-end examples
+- Enterprise supply-chain architecture case studies
 
 ## How I organize each example
 
-For each topic, I try to answer a few simple questions:
+For normal examples, I try to answer:
 
 1. What problem are we solving?
 2. Why would I use this Snowflake feature?
@@ -30,7 +30,9 @@ For each topic, I try to answer a few simple questions:
 5. When would I use it in a real project?
 6. What should I watch out for?
 
-For the enterprise use cases, I go one level deeper and explain the problem, existing systems, requirements, architecture options, design decision, implementation, data quality, security, failure handling, troubleshooting, performance, cost, and trade-offs.
+For the enterprise case studies, I go deeper:
+
+`Problem -> Goal -> Existing Systems -> Requirements -> Challenges -> Options -> Design -> Implementation -> Data Quality -> Security -> Failure Handling -> Troubleshooting -> Performance/Cost -> Trade-offs -> Interview Answer`
 
 ## Repository structure
 
@@ -46,34 +48,60 @@ For the enterprise use cases, I go one level deeper and explain the problem, exi
 | `08-data-sharing` | Secure data sharing patterns |
 | `09-architecture` | Enterprise architecture and reference patterns |
 | `10-ai-ready-data` | Data foundations for AI and search use cases |
-| `11-enterprise-use-cases` | Enterprise supply-chain data architecture case studies |
 | `11-end-to-end` | Complete business examples |
+| `12-enterprise-use-cases` | Enterprise supply-chain data architecture case studies |
 
 ## Enterprise Supply Chain Case Studies
 
-The `11-enterprise-use-cases` section uses a realistic enterprise supply-chain environment with SAP, databases, SharePoint, external data, integration tools, Snowflake, dbt, and business analytics platforms.
+The `12-enterprise-use-cases` section uses a realistic enterprise supply-chain environment with SAP, databases, SharePoint, external data, integration tools, Snowflake, dbt, and business analytics platforms.
 
-The use cases cover:
+The examples focus on how I would think about a real enterprise data architecture rather than showing isolated Snowflake features.
 
-1. SAP ECC / APO Data Integration
-2. Supply Chain Master Data
-3. Procurement & Supplier Analytics
-4. Inventory & Material Visibility
-5. Manufacturing & Plant Analytics
-6. Order Fulfillment & Delivery
-7. External Data Integration
-8. Enterprise CDC & Incremental Processing
-9. Enterprise Snowflake Data Warehouse
-10. Supply Chain Analytics & Control Tower
+### Use Cases
 
-These are portfolio case studies. They do not contain company data, credentials, or confidential information.
+| # | Use Case | Main Architecture Topic |
+|---|---|---|
+| 01 | SAP ECC / APO Data Integration | SAP ingestion and incremental loads |
+| 02 | Supply Chain Master Data | Master data, mappings, and history |
+| 03 | Procurement & Supplier Analytics | Procurement model and supplier performance |
+| 04 | Inventory & Material Visibility | Inventory reconciliation and availability |
+| 05 | Manufacturing & Plant Analytics | Production, yield, and downtime |
+| 06 | Order Fulfillment & Delivery | End-to-end order visibility |
+| 07 | External Data Integration | APIs, files, Python, Azure, and integration patterns |
+| 08 | Enterprise CDC & Incremental Processing | CDC, Streams, Tasks, MERGE, and dbt |
+| 09 | Enterprise Snowflake Data Warehouse | RawDB, ProdDB, modeling, and transformation |
+| 10 | Supply Chain Analytics & Control Tower | Cross-domain analytics and business insights |
+
+### Common Architecture
+
+```text
+Data Sources
+  SAP ECC / APO / BW-HANA
+  Oracle / SQL Server
+  SharePoint / Excel / Files
+  External Data / APIs
+          |
+          v
+Data Integration
+  Extractors / Delta
+  Alteryx / Azure / Python
+          |
+          v
+Snowflake
+  RawDB -> Transformation -> ProdDB
+                    |
+                   dbt
+                    |
+          +---------+---------+
+          |                   |
+       Analytics          Business Users
+   Tableau / Power BI    SAP BusinessObjects
+```
+
+These are portfolio case studies. They use generic and sample data and do not contain company data, credentials, or confidential information.
 
 ## My approach
 
 I prefer simple designs that are easy to understand, operate, and explain.
 
-The examples are intentionally focused on the reason behind a design decision, not just the SQL syntax.
-
-## Note
-
-These examples are for learning and portfolio use. They do not contain company data, credentials, or other confidential information.
+The examples are focused on the reason behind a design decision, not just the SQL syntax.
