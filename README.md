@@ -1,1 +1,56 @@
-# snowflake
+# Snowflake
+
+A practical collection of Snowflake examples that I use to learn, build, and explain data engineering and data architecture concepts.
+
+The goal of this repository is simple: show how I would use Snowflake to solve common data problems in a real project.
+
+## What is covered
+
+- Snowflake basics and setup
+- Data loading and ingestion
+- Streams, Tasks, and incremental processing
+- Data modeling
+- Data quality
+- Security and governance
+- Performance and cost
+- Data sharing
+- Enterprise data architecture
+- AI-ready data
+- End-to-end examples
+
+## How I organize each example
+
+For each topic, I try to answer a few simple questions:
+
+1. What problem are we solving?
+2. Why would I use this Snowflake feature?
+3. How does it work?
+4. What does the SQL look like?
+5. When would I use it in a real project?
+6. What should I watch out for?
+
+## Repository structure
+
+| Folder | What you will find |
+|---|---|
+| `01-foundations` | Databases, schemas, warehouses, and basic setup |
+| `02-ingestion` | Loading data into Snowflake |
+| `03-data-engineering` | Streams, Tasks, Dynamic Tables, and incremental processing |
+| `04-data-modeling` | Dimensional modeling, Data Vault, and SCD patterns |
+| `05-data-quality` | Data quality rules, validation, and monitoring |
+| `06-governance-security` | RBAC, masking, row access, tags, and classification |
+| `07-performance-cost` | Query tuning, warehouse sizing, and cost control |
+| `08-data-sharing` | Secure data sharing patterns |
+| `09-architecture` | Enterprise architecture and reference patterns |
+| `10-ai-ready-data` | Data foundations for AI and search use cases |
+| `11-end-to-end` | Complete business examples |
+
+## My approach
+
+I prefer simple designs that are easy to understand, operate, and explain.
+
+The examples are intentionally focused on the reason behind a design decision, not just the SQL syntax.
+
+## Note
+
+These examples are for learning and portfolio use. They do not contain company data, credentials, or other confidential information.
