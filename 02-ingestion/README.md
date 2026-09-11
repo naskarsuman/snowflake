@@ -13,8 +13,20 @@ This section shows different ways to bring data into Snowflake.
 
 ## Simple flow
 
-Source data → Stage → Snowflake table
+```text
+Source data
+    |
+    v
+Stage
+    |
+    v
+Snowflake table
+```
 
-The right option depends on how often data arrives, how much data there is, and how quickly the business needs to see it.
+### Batch
 
-More examples will be added here.
+Use batch loading when files arrive on a schedule and the business does not need every change immediately.
+
+See [`01_copy_into.sql`](01_copy_into.sql) for a simple example.
+
+More examples will be added as the repository grows.
