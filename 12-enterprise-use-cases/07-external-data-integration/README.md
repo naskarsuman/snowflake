@@ -1,12 +1,9 @@
 # 07 — External Data Integration
 
-## Interview Question
+## Problem Statement
 How would I integrate supply-chain data when some sources provide APIs, some provide files, and some are maintained by business users?
 
-## Business Problem
-Enterprise supply-chain data is not always available through one standard interface. Data may arrive through APIs, Excel, SharePoint, flat files, or custom processes.
-
-## Goal
+## Business Goal
 Create a controlled integration pattern that accepts different source types while providing consistent data to Snowflake.
 
 ## Existing Tools
