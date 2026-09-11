@@ -1,12 +1,9 @@
 # 02 — Supply Chain Master Data
 
-## Interview Question
+## Problem Statement
 How would I create a trusted view of materials, suppliers, plants, customers, and other supply-chain master data when information is maintained in multiple systems?
 
-## Business Problem
-The same business object can appear in SAP, SharePoint, Excel, or another operational system with different IDs, descriptions, or attributes. Reporting becomes difficult when each team uses a different version.
-
-## Goal
+## Business Goal
 Create a common master-data layer with agreed business keys, standard values, mappings, history, and data-quality rules.
 
 ## Existing Systems
