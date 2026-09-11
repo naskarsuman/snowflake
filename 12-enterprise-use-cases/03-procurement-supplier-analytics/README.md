@@ -1,12 +1,9 @@
 # 03 — Procurement & Supplier Analytics
 
-## Interview Question
+## Problem Statement
 How would I design a data platform that shows purchasing spend, supplier performance, material cost, purchase orders, receipts, and invoices across the enterprise?
 
-## Business Problem
-Procurement data is spread across purchasing, supplier, material, receipt, and invoice processes. Business users need consistent definitions for spend and supplier performance.
-
-## Goal
+## Business Goal
 Create a trusted procurement model for supplier performance, spend, price analysis, and PO/receipt/invoice analysis.
 
 ## Existing Systems
@@ -38,6 +35,7 @@ DIM_DATE
       +---- FACT_RECEIPT
       +---- FACT_INVOICE
 ```
+
 Define grain before building facts. Example: one purchase-order fact row = one PO line.
 
 ## Main Challenges
