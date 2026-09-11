@@ -1,19 +1,43 @@
 # Data Modeling
 
-This section shows how I model data for different business needs.
+This section shows different ways to organize data for analytics and reporting.
+
+I cover Kimball, Data Vault, and Inmon modeling approaches and show when each one makes sense.
 
 ## Topics
 
-- Dimensional modeling
-- Kimball / star schema
+- Kimball Data Modeling
+  - Star Schema
+  - Snowflake Schema
+  - Fact Tables
+  - Dimension Tables
+  - Slowly Changing Dimensions (SCD)
+    - SCD Type 1
+    - SCD Type 2
+    - SCD Type 3
+  - Conformed Dimensions
+  - Role-Playing Dimensions
+  - Fact vs Dimension Grain
+
 - Data Vault
-- Slowly Changing Dimensions
-- Enterprise data models
+  - Hub
+  - Link
+  - Satellite
+  - Business Key
+  - Hash Key
+  - History Tracking
 
-## Simple question
+- Inmon Data Modeling
+  - 3NF / Normalized Model
+  - Enterprise Data Warehouse
+  - Data Marts
 
-The model depends on what we need to do with the data.
+- Common Modeling Concepts
+  - Business Key vs Surrogate Key
+  - Data Grain
+  - Primary Key / Foreign Key
+  - Data Lineage
+  - Data Quality
+  - Metadata
 
-For reporting, a simple dimensional model may work well. For a large enterprise where source systems change often, Data Vault can be a better fit.
-
-More examples will be added here.
+The examples use simple business scenarios so the difference between the models is easy to understand.
