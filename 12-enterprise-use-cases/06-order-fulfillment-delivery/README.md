@@ -1,12 +1,9 @@
 # 06 — Order Fulfillment & Delivery
 
-## Interview Question
+## Problem Statement
 How would I create end-to-end visibility from customer order through inventory, fulfillment, shipment, and delivery?
 
-## Business Problem
-An order moves through several systems. When delivery is late, no single system may show the complete journey.
-
-## Goal
+## Business Goal
 Create one analytical view of the order lifecycle and identify where delays occur.
 
 ```text
