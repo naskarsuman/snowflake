@@ -1,12 +1,9 @@
 # 09 — Enterprise Snowflake Data Warehouse
 
-## Interview Question
+## Problem Statement
 How would I design Snowflake as an enterprise data warehouse when data comes from SAP, databases, files, and external sources and is consumed by multiple analytics tools?
 
-## Business Problem
-Data is spread across different systems and reporting tools. The warehouse needs clear layers, ownership, transformation rules, security, and a reliable path from source data to reporting.
-
-## Goal
+## Business Goal
 Create a simple, traceable warehouse architecture that separates raw source data from business-ready data.
 
 ## Logical Layers
