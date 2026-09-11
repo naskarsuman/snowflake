@@ -1,12 +1,9 @@
 # 01 — SAP ECC / APO Data Integration
 
-## Interview Question
+## Problem Statement
 How would I bring SAP ECC and SAP APO supply-chain data into Snowflake for enterprise analytics while keeping the load reliable and efficient?
 
-## Business Problem
-Supply-chain data is held in SAP systems and is needed by many downstream teams. Full extracts can be large and create unnecessary load. The platform also needs to know what was loaded, what failed, and what can be safely reprocessed.
-
-## Goal
+## Business Goal
 Create a reliable path from SAP source systems into Snowflake RAW, validate the data, and make trusted data available to downstream models and analytics.
 
 ## Existing Systems
