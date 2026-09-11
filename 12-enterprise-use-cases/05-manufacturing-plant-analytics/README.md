@@ -1,12 +1,9 @@
 # 05 — Manufacturing & Plant Analytics
 
-## Interview Question
+## Problem Statement
 How would I create a common view of production performance across multiple manufacturing plants when plants provide data at different levels of detail and frequency?
 
-## Business Problem
-Production information may come from ERP, manufacturing systems, and plant-level sources. Plants may use different definitions and data formats.
-
-## Goal
+## Business Goal
 Create a common model for production volume, plan versus actual, yield, scrap, downtime, and other plant measures.
 
 ## Existing Systems
