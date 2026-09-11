@@ -1,12 +1,9 @@
 # 08 — Enterprise CDC & Incremental Processing
 
-## Interview Question
+## Problem Statement
 How would I process inserts, updates, and deletes from large operational systems without repeatedly reprocessing the entire source table?
 
-## Business Problem
-Operational tables can contain millions or hundreds of millions of records. Full processing for every change increases runtime and cost.
-
-## Goal
+## Business Goal
 Capture and process only changed data while keeping the pipeline reliable and restartable.
 
 ## Architecture
